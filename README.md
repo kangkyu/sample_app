@@ -20,3 +20,12 @@ rails server -b $IP -p $PORT
 <% provide(:title, "Home") %>
 <%= yield(:title) %>
 ```
+
+```ruby
+gem 'bootstrap-sass',       '3.2.0.1'
+```
+
+```scss
+@import "bootstrap-sprockets";
+@import "bootstrap";
+```
