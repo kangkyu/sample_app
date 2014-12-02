@@ -9,9 +9,13 @@ by [Michael Hartl](http://www.michaelhartl.com/).
 + named route
 
 
+
+
+
 ####notes
 ```sh
 rails server -b $IP -p $PORT 
+bundle exec guard
 ```
 
 ```html
