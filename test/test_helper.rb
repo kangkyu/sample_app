@@ -4,7 +4,7 @@ require 'rails/test_help'
 
 # Listing 3.40
 require "minitest/reporters"
-Minitest::Reporters.use!
+Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(:color => true)]
 ##
 
 class ActiveSupport::TestCase
