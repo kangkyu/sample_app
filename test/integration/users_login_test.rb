@@ -26,7 +26,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   # 4. Verify that a logout link appears
   # 5. Verify that a profile link appears.
 
-  test "login with valid information" do
+  test "login with valid information followed by logout" do
     get login_path
     post login_path, session: { email: @user.email, password: 'password' }
     assert_redirected_to @user

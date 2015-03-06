@@ -1,4 +1,4 @@
 <h1>show user</h1>
 
-<%= link_to "logout", logout_path %>
-<%= link_to "user", user_path(@user) %>
+<%= link_to "logout", logout_path, method: :delete %>
+<%= link_to "user", user_path(current_user) %>
